@@ -9,10 +9,15 @@ defmodule Hello do
   ## Examples
 
       iex> Hello.hello()
-      :world
+      "hello world"
 
   """
   def hello do
-    :world
+    send(self(), {:string, "hello world"})
+
+    receive do
+      {:string, msg} ->
+        msg
+    end
   end
 end
