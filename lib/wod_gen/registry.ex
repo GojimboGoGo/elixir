@@ -47,14 +47,14 @@ defmodule KV.Registry do
 
   def handle_call({:create, name}, _from, {names, refs}) do
     if Map.has_key?(names, name) do
-      {:reply, {names, refs}}
+      {:reply, {:ok, Map.get(names, name)}, {names, refs}}
     else
       {:ok, pid} = KV.Bucket.start_link([])
       ref = Process.monitor(pid)
       refs = Map.put(refs, ref, name)
       names = Map.put(names, name, pid)
       state = {names, refs}
-      {:reply, state, state}
+      {:reply, {:ok, pid}, state}
     end
   end
 

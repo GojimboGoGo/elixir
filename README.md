@@ -30,12 +30,12 @@ Return a number of generated locations equal to Size.
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `hello` to your list of dependencies in `mix.exs`:
+by adding `wod_gen` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:hello, "~> 0.1.0"}
+    {:wod_gen, "~> 0.1.0"}
   ]
 end
 ```

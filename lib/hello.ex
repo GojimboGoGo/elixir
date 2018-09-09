@@ -15,7 +15,7 @@ defmodule Hello do
 
   def hello do
     parent = self()
-    spawn fn -> send(parent, {:string, "hello world"}) end
+    spawn(fn -> send(parent, {:string, "hello world"}) end)
 
     receive do
       {:string, msg} ->
