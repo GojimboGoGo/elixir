@@ -1,4 +1,4 @@
-defmodule KV.Bucket do
+defmodule WG.Bucket do
   use Agent
 
   @moduledoc """
@@ -6,11 +6,11 @@ defmodule KV.Bucket do
   """
 
   @doc """
-  Start the data KV map.
+  Start the data key-value map.
 
   ## Examples
 
-      iex> {:ok, pid} = KV.Bucket.start_link([])
+      iex> {:ok, pid} = WG.Bucket.start_link([])
       iex> is_pid pid
       true
 

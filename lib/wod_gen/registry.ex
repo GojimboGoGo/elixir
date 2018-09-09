@@ -1,4 +1,4 @@
-defmodule KV.Registry do
+defmodule WG.Registry do
   use GenServer
 
   ## Client API
@@ -49,7 +49,7 @@ defmodule KV.Registry do
     if Map.has_key?(names, name) do
       {:reply, {:ok, Map.get(names, name)}, {names, refs}}
     else
-      {:ok, pid} = KV.Bucket.start_link([])
+      {:ok, pid} = WG.Bucket.start_link([])
       ref = Process.monitor(pid)
       refs = Map.put(refs, ref, name)
       names = Map.put(names, name, pid)

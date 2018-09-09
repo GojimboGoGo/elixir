@@ -4,7 +4,7 @@ WIP
 
 Generator for locations of interest using the World of Darkness setting.
 
-Inspired by the generators provided at <http://donjon.bin.sh/>.
+Inspired by the generators provided at <http://donjon.bin.sh/>
 
 ## Endpoints
 

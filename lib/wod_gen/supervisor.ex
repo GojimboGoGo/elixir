@@ -1,4 +1,4 @@
-defmodule KV.Supervisor do
+defmodule WG.Supervisor do
   use Supervisor
 
   def start_link(opts) do
@@ -7,7 +7,7 @@ defmodule KV.Supervisor do
 
   def init(:ok) do
     children = [
-      {KV.Registry, name: KV.Registry}
+      {WG.Registry, name: WG.Registry}
     ]
 
     Supervisor.init(children, strategy: :one_for_one)
