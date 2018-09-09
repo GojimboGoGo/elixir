@@ -1,6 +1,31 @@
-# Hello
+# World of Darkness Location Generator
 
-**TODO: Add description**
+WIP
+
+Generator for locations of interest using the World of Darkness setting.
+
+Inspired by the generators provided at http://donjon.bin.sh/.
+
+## Endpoints
+
+### GET /v1/locations
+
+```
+{
+	"title": "Hollywood Hotel",
+	"description": "A forested hill scarred by a recent wildfire. A signal tower stands here, a green light blinking periodically.",
+	"history": [
+		"Before the nearby Monty Veillon Airport first opened, a strange light shone upon the site. The vagabonds and beggars have since whispered about the true messiah.",
+		"A police bust at the neighboring bar, Hall of Valhalla, turned into a firefight. Neighbors trade rumors of the lingering presence of the vengeful dead.",
+		"A drug dealer left a considerable stash of money buried at the site before she was imprisoned. Only her closest family members are aware of the money."
+	]
+}
+```
+
+#### Filters
+##### Size: Integer (default 1)
+
+Return a number of generated locations equal to Size.
 
 ## Installation
 
