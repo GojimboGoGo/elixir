@@ -12,6 +12,7 @@ defmodule Hello do
       "hello world"
 
   """
+
   def hello do
     parent = self()
     spawn fn -> send(parent, {:string, "hello world"}) end
