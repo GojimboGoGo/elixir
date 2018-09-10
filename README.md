@@ -28,19 +28,21 @@ Inspired by the generators provided at <http://donjon.bin.sh/>
 
 Return a number of generated locations equal to Size.
 
-## Installation
+To start your Phoenix server:
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `wod_gen` to your list of dependencies in `mix.exs`:
+  * Install dependencies with `mix deps.get`
+  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
+  * Install Node.js dependencies with `cd assets && npm install`
+  * Start Phoenix endpoint with `mix phx.server`
 
-```elixir
-def deps do
-  [
-    {:wod_gen, "~> 0.1.0"}
-  ]
-end
-```
+Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/hello](https://hexdocs.pm/hello).
+Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+
+## Learn more
+
+  * Official website: http://www.phoenixframework.org/
+  * Guides: http://phoenixframework.org/docs/overview
+  * Docs: https://hexdocs.pm/phoenix
+  * Mailing list: http://groups.google.com/group/phoenix-talk
+  * Source: https://github.com/phoenixframework/phoenix

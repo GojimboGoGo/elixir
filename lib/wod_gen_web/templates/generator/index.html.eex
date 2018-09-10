@@ -1,0 +1,16 @@
+<head>
+    <title>WIP</title>
+</head>
+<div class="jumbotron">
+    <h2>Hollywood Hotel</h2>
+    <p>A forested hill scarred by a recent wildfire. A signal tower stands here, a green light blinking periodically.</p>
+</div>
+
+<div>
+    <h3>History</h3>
+    <ul class="events">
+        <li>Before the nearby Monty Veillon Airport first opened, a strange light shone upon the site. The vagabonds and beggars have since whispered about the true messiah.</li>
+        <li>A police bust at the neighboring bar, Hall of Valhalla, turned into a firefight. Neighbors trade rumors of the lingering presence of the vengeful dead.</li>
+        <li>A drug dealer left a considerable stash of money buried at the site before she was imprisoned. Only her closest family members are aware of the money.</li>
+    </ul>
+</div>
