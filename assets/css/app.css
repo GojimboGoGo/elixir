@@ -1,2 +1,10 @@
 /* This file is for your main application css. */
 
+.btn {
+    background-color: purple;
+    color: white;
+}
+
+#description {
+    background-color: papayawhip;
+}
