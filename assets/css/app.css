@@ -1,8 +1,13 @@
 /* This file is for your main application css. */
 
-.btn {
+#generate-btn {
     background-color: purple;
     color: white;
+    touch-action: manipulation;
+}
+
+#generate-btn:hover {
+    background-color: #721785;
 }
 
 #description {

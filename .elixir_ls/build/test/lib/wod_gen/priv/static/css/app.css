@@ -1,9 +1,15 @@
 /* This file is for your main application css. */
 
-.btn {
+/* #generate-btn {
     background-color: purple;
     color: white;
-}
+} */
+
+/* #generate-btn:hover {
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+} */
 
 #description {
     background-color: papayawhip;

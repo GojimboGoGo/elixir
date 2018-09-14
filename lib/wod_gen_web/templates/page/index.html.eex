@@ -14,7 +14,7 @@
 </div>
 
 <div class="text-center">
-  <button type="button" class="btn btn-lg">
+  <button type="button" id="generate-btn" class="btn btn-lg">
     Generate
     </button>
 </div>
