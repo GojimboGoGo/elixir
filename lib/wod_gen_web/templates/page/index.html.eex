@@ -1,39 +1,13 @@
 <div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+    <h2>Hollywood Hotel</h2>
+    <p>A forested hill scarred by a recent wildfire. A signal tower stands here, a green light blinking periodically.</p>
 </div>
 
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="/v1/locations">Random Location Generator!</a>
-      </li>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
+<div>
+    <ul class="events list-group">
+        <h3 class="list-group-item-heading">History</h3>
+        <li class = "list-group-item">Before the nearby Monty Veillon Airport first opened, a strange light shone upon the site. The vagabonds and beggars have since whispered about the true messiah.</li>
+        <li class = "list-group-item">A police bust at the neighboring bar, Hall of Valhalla, turned into a firefight. Neighbors trade rumors of the lingering presence of the vengeful dead.</li>
+        <li class = "list-group-item">A drug dealer left a considerable stash of money buried at the site before she was imprisoned. Only her closest family members are aware of the money.</li>
     </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
-  </div>
 </div>
