@@ -1,15 +1,15 @@
 <div class="jumbotron" id="description">
-    <%= content_tag :h2, "Hollywood Hotel" %>
-    <%= content_tag :p, "A forested hill scarred by a recent wildfire. A signal tower stands here, a green light blinking periodically." %>
+    <%= content_tag :h2, @conn.assigns.loc.title %>
+    <%= content_tag :p, @conn.assigns.loc.description %>
 </div>
 
 <div>
     <ul class="events list-group">
         <h3 class="list-group-item-heading">History</h3>
         <!-- roll the list here -->
-        <%= content_tag :li, "Before the nearby Monty Veillon Airport first opened, a strange light shone upon the site. The vagabonds and beggars have since whispered about the true messiah.", class: "list-group-item" %>
-        <li class = "list-group-item">A police bust at the neighboring bar, Hall of Valhalla, turned into a firefight. Neighbors trade rumors of the lingering presence of the vengeful dead.</li>
-        <li class = "list-group-item">A drug dealer left a considerable stash of money buried at the site before she was imprisoned. Only her closest family members are aware of the money.</li>
+        <%= for event <- @conn.assigns.loc.history do %>
+            <%= content_tag :li, event, class: "list-group-item" %>
+        <% end %>
     </ul>
 </div>
 

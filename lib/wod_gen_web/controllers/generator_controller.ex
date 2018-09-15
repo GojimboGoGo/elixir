@@ -2,6 +2,8 @@ defmodule WodGenWeb.GeneratorController do
   use WodGenWeb, :controller
 
   def index(conn, _params) do
-    render conn, "index.html"
+    locations = WodGen.LocationService.generate()
+
+    json(conn, locations)
   end
 end

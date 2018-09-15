@@ -14,8 +14,7 @@ config :wod_gen, WodGenWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "9nDyNmFgjMIIbq+AWe75f5saZFnqtwHN32JgeBgKp8y/YEhWHzUxBe8aGH+7PMkf",
   render_errors: [view: WodGenWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: WodGen.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: WodGen.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -24,4 +23,4 @@ config :logger, :console,
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
-import_config "#{Mix.env}.exs"
+import_config "#{Mix.env()}.exs"

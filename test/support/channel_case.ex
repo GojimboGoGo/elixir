@@ -25,13 +25,13 @@ defmodule WodGenWeb.ChannelCase do
     end
   end
 
-
   setup tags do
     :ok = Ecto.Adapters.SQL.Sandbox.checkout(WodGen.Repo)
+
     unless tags[:async] do
       Ecto.Adapters.SQL.Sandbox.mode(WodGen.Repo, {:shared, self()})
     end
+
     :ok
   end
-
 end

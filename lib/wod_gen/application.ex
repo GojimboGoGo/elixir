@@ -11,7 +11,7 @@ defmodule WodGen.Application do
       # Start the Ecto repository
       supervisor(WodGen.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(WodGenWeb.Endpoint, []),
+      supervisor(WodGenWeb.Endpoint, [])
       # Start your own worker by calling: WodGen.Worker.start_link(arg1, arg2, arg3)
       # worker(WodGen.Worker, [arg1, arg2, arg3]),
     ]
