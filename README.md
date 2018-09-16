@@ -8,7 +8,7 @@ Inspired by the generators provided at <http://donjon.bin.sh/>
 
 ## Endpoints
 
-### GET /v1/locations
+### GET /api/v1/locations
 
 ```json
 {
