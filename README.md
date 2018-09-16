@@ -22,12 +22,6 @@ Inspired by the generators provided at <http://donjon.bin.sh/>
 }
 ```
 
-#### Filters
-
-##### Size: Integer (default 1)
-
-Return a number of generated locations equal to Size.
-
 ## Web UI
 
 Also has a browser friendly view to test the data, courtesy of Phoenix framework.

@@ -1,9 +1,8 @@
-defmodule WodGen.Repo.Migrations.CreateSctructure do
+defmodule WodGen.Repo.Migrations.CreateStructures do
   use Ecto.Migration
 
   def change do
-
-    create table(:structure) do
+    create table(:structures) do
       add :title, :string
       add :description, :string
 

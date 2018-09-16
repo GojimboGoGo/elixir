@@ -14,7 +14,7 @@
 </div>
 
 <div class="text-center">
-  <button type="button" id="generate-btn" class="btn btn-lg">
+  <button type="button" onClick="window.location.reload()" id="generate-btn" class="btn btn-lg">
     Generate
     </button>
 </div>

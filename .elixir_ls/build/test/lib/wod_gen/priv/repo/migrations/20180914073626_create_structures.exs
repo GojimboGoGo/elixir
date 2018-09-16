@@ -3,7 +3,7 @@ defmodule WodGen.Repo.Migrations.CreateSctructure do
 
   def change do
 
-    create table(:structure) do
+    create table(:structures) do
       add :title, :string
       add :description, :string
 
